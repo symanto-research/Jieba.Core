@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace JiebaNet.Segmenter.Common
+namespace Symanto.Jieba.Net.Core.Common
 {
     // Refer to: https://github.com/brianfromoregon/trie
     public class TrieNode

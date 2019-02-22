@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using JiebaNet.Segmenter.Common;
 using Newtonsoft.Json;
+using Symanto.Jieba.Net.Core.Common;
 
-namespace JiebaNet.Segmenter.PosSeg
+namespace Symanto.Jieba.Net.Core.PosSeg
 {
     public class Viterbi
     {

@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace JiebaNet.Segmenter.Common
+namespace Symanto.Jieba.Net.Core.Common
 {
     public interface ICounter<T>
     {

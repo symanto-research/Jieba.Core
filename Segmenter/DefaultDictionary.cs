@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace JiebaNet.Segmenter
+namespace Symanto.Jieba.Net.Core
 {
     public class DefaultDictionary<TKey, TValue> : Dictionary<TKey, TValue>
     {

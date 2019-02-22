@@ -2,11 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using JiebaNet.Segmenter.Common;
+using Symanto.Jieba.Net.Core.Common;
 
-namespace JiebaNet.Segmenter.PosSeg
+namespace Symanto.Jieba.Net.Core.PosSeg
 {
     public class PosSegmenter
     {
@@ -49,7 +48,7 @@ namespace JiebaNet.Segmenter.PosSeg
                     var tokens = line.Split(' ');
                     if (tokens.Length < 2)
                     {
-                        Debug.Fail(string.Format("Invalid line: {0}", line));
+                        Debug.Fail($"Invalid line: {line}");
                         continue;
                     }
 
@@ -61,7 +60,7 @@ namespace JiebaNet.Segmenter.PosSeg
             }
             catch (System.IO.IOException e)
             {
-                Debug.Fail(string.Format("Word tag table load failure, reason: {0}", e.Message));
+                Debug.Fail($"Word tag table load failure, reason: {e.Message}");
             }
             catch (FormatException fe)
             {

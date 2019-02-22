@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace JiebaNet.Segmenter.Common
+namespace Symanto.Jieba.Net.Core.Common
 {
     public static class Extensions
     {

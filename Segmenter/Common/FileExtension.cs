@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Reflection;
 using System.Text;
 
-namespace JiebaNet.Segmenter.Common
+namespace Symanto.Jieba.Net.Core.Common
 {
     public static class FileExtension
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace JiebaNet.Segmenter
+namespace Symanto.Jieba.Net.Core
 {
     public class Constants
     {

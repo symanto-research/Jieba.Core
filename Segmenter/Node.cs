@@ -1,4 +1,4 @@
-﻿namespace JiebaNet.Segmenter
+﻿namespace Symanto.Jieba.Net.Core
 {
     public class Node
     {
