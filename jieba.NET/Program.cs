@@ -1,7 +1,7 @@
-﻿using JiebaNet.Segmenter;
-using JiebaNet.Segmenter.Common;
-using System;
+﻿using System;
 using System.Text;
+using Symanto.Jieba.Net.Core;
+using Symanto.Jieba.Net.Core.Common;
 
 namespace jieba.NET
 {

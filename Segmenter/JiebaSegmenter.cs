@@ -5,10 +5,10 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
-using JiebaNet.Segmenter.Common;
-using JiebaNet.Segmenter.FinalSeg;
+using Symanto.Jieba.Net.Core.Common;
+using Symanto.Jieba.Net.Core.FinalSeg;
 
-namespace JiebaNet.Segmenter
+namespace Symanto.Jieba.Net.Core
 {
     public class JiebaSegmenter
     {
@@ -425,7 +425,7 @@ namespace JiebaNet.Segmenter
                 }
                 catch (IOException e)
                 {
-                    Debug.Fail(string.Format("'{0}' load failure, reason: {1}", dictFullPath, e.Message));
+                    Debug.Fail($"'{dictFullPath}' load failure, reason: {e.Message}");
                 }
                 catch (FormatException fe)
                 {

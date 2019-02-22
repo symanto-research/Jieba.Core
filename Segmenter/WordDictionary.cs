@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Text;
-using JiebaNet.Segmenter.Common;
+using Symanto.Jieba.Net.Core.Common;
 
-namespace JiebaNet.Segmenter
+namespace Symanto.Jieba.Net.Core
 {
     public class WordDictionary
     {
-        private static readonly Lazy<WordDictionary> lazy = new Lazy<WordDictionary>(() => new WordDictionary());
+        private static readonly Lazy<WordDictionary> LazyInstance = new Lazy<WordDictionary>(() => new WordDictionary());
         private static readonly string MainDict = ConfigManager.MainDictFile;
 
-        internal IDictionary<string, int> Trie = new Dictionary<string, int>();
+        internal readonly IDictionary<string, int> Trie = new Dictionary<string, int>();
 
         /// <summary>
         /// total occurrence of all words.
@@ -28,10 +27,7 @@ namespace JiebaNet.Segmenter
             Debug.WriteLine("total freq: {0}", Total);
         }
 
-        public static WordDictionary Instance
-        {
-            get { return lazy.Value; }
-        }
+        public static WordDictionary Instance => LazyInstance.Value;
 
         private void LoadDict()
         {
@@ -50,7 +46,7 @@ namespace JiebaNet.Segmenter
                         var tokens = line.Split(' ');
                         if (tokens.Length < 2)
                         {
-                            Debug.Fail(string.Format("Invalid line: {0}", line));
+                            Debug.Fail($"Invalid line: {line}");
                             continue;
                         }
 
@@ -76,7 +72,7 @@ namespace JiebaNet.Segmenter
             }
             catch (IOException e)
             {
-                Debug.Fail(string.Format("{0} load failure, reason: {1}", MainDict, e.Message));
+                Debug.Fail($"{MainDict} load failure, reason: {e.Message}");
             }
             catch (FormatException fe)
             {
@@ -91,10 +87,7 @@ namespace JiebaNet.Segmenter
 
         public int GetFreqOrDefault(string key)
         {
-            if (ContainsWord(key))
-                return Trie[key];
-            else
-                return 1;
+            return ContainsWord(key) ? Trie[key] : 1;
         }
 
         public void AddWord(string word, int freq, string tag = null)

@@ -2,12 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using JiebaNet.Segmenter.Common;
 using Newtonsoft.Json;
+using Symanto.Jieba.Net.Core.Common;
 
-namespace JiebaNet.Segmenter.FinalSeg
+namespace Symanto.Jieba.Net.Core.FinalSeg
 {
     public class Viterbi : IFinalSeg
     {

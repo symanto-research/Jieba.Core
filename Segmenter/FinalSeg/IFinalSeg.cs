@@ -1,7 +1,6 @@
-using System;
 using System.Collections.Generic;
 
-namespace JiebaNet.Segmenter.FinalSeg
+namespace Symanto.Jieba.Net.Core.FinalSeg
 {
     /// <summary>
     /// 在词典切分之后，使用此接口进行切分，默认实现为HMM方法。

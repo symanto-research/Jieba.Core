@@ -2,17 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>Jieba.Net.Core</RootNamespace>
-    <AssemblyName>Jieba.Net.Core</AssemblyName>
-    <Version>1.1.0</Version>
-    <Authors>CustomChen</Authors>
-    <Description>使用说明见：https://github.com/CustomChen/Jieba.Core/blob/master/README.md</Description>
-    <PackageProjectUrl>https://github.com/CustomChen/Jieba.Core</PackageProjectUrl>
+    <RootNamespace>Symanto.Jieba.Net.Core</RootNamespace>
+    <AssemblyName>Symanto.Jieba.Net.Core</AssemblyName>
+    <Version>1.0.1</Version>
+    <Authors>Symanto Research</Authors>
+    <Description>Provides segmentation of Chinese text</Description>
+    <PackageProjectUrl>https://github.com/symanto-research/Jieba.Core</PackageProjectUrl>
     <PackageTags>Jieba .Net Core 2.0</PackageTags>
-    <PackageReleaseNotes>使用说明见：https://github.com/CustomChen/Jieba.Core/blob/master/README.md</PackageReleaseNotes>
+    <PackageReleaseNotes>https://github.com/symanto-research/Jieba.Core/blob/master/README.md</PackageReleaseNotes>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageId>Jieba.Net.Core</PackageId>
+    <PackageId>Symanto.Jieba.Net.Core</PackageId>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

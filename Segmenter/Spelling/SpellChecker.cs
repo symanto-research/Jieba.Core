@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using JiebaNet.Segmenter.Common;
+using Symanto.Jieba.Net.Core.Common;
 
-namespace JiebaNet.Segmenter.Spelling
+namespace Symanto.Jieba.Net.Core.Spelling
 {
     public interface ISpellChecker
     {

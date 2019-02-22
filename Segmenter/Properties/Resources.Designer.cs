@@ -8,10 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Jieba.Net.Core.Properties {
-    using System;
-    
-    
+namespace Symanto.Jieba.Net.Core.Properties {
     /// <summary>
     ///   一个强类型的资源类，用于查找本地化的字符串等。
     /// </summary>

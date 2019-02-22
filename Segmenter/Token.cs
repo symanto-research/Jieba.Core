@@ -1,4 +1,4 @@
-﻿namespace JiebaNet.Segmenter
+﻿namespace Symanto.Jieba.Net.Core
 {
     public class Token
     {
@@ -15,7 +15,7 @@
 
         public override string ToString()
         {
-            return string.Format("[{0}, ({1}, {2})]", Word, StartIndex, EndIndex);
+            return $"[{Word}, ({StartIndex}, {EndIndex})]";
         }
     }
 }
